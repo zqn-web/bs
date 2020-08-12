@@ -11,31 +11,26 @@
     <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
-    <nav>
-        <div class="container center">
-          <div class="row">
-            <!-- 左 -->
-            <div class="col-lg-4">
-                <ul class=" nav">
-                    <li class="nav-item"><a class="nav-link" href="">首页</a></li>
-                    <li class="nav-item"><a class="nav-link" href="">关于我们</a></li>
-                    <li class="nav-item"><a class="nav-link" href="">私人订制</a></li>
-                </ul>
-            </div>
-            <!-- 中 logo -->
-            <div class="col-lg-4">
-                <div id="logo">
-                    <a href=""><img src="./img/index/logo.png" alt=""></a>
-                </div>
-            </div>
-            <!-- 右 -->
-            <div class="col-lg-4">
-                <ul class="nav">
-                    <li class="nav-item"><a class="nav-link" href="">精选主题</a></li>
-                    <li class="nav-item"><a class="nav-link" href="">外景拍摄</a></li>
-                    <li class="nav-item"><a class="nav-link" href="">联系我们</a></li>
-                </ul>
-            </div>
+    <nav id="nav">
+        <div class="container center navbar navbar-expand-sm  bg-light navbar-light">
+          <!-- 最前面不隐藏的菜单 -->
+          <div class="navbar-brand">
+              <a href=""><img src="./img/index/logo.png" alt=""></a>
+          </div>
+          <!-- 折叠之后出现的按钮，小屏显示，大屏不显示-->
+            <button data-toggle="collapse" data-target="#content" class="navbar-toggler right">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+          <!-- 折叠的导航，小屏折叠，大屏横向 -->
+          <div id="content" class="collapse navbar-collapse">
+              <ul class="navbar-nav">
+                  <li class="nav-item" ><a class="nav-link" href="">首页</a></li>
+                  <li class="nav-item" ><a class="nav-link" href="">关于我们</a></li>
+                  <li class="nav-item" ><a class="nav-link" href="">私人订制</a></li>
+                  <li class="nav-item" ><a class="nav-link" href="">精选主题</a></li>
+                  <li class="nav-item" ><a class="nav-link" href="">外景拍摄</a></li>
+                  <li class="nav-item" ><a class="nav-link" href="">联系我们</a></li>
+              </ul>
           </div>
         </div>
     </nav>
